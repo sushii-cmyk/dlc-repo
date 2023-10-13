@@ -42,7 +42,7 @@ dataset_type: multi-animal-imgaug
 decay_steps: 50000
 display_iters: 500
 global_scale: 0.8
-init_weights: /content/drive/MyDrive/Work/DeepLabCut/social-test-daniel-2023-08-04/dlc-models/iteration-2/social-testAug4-trainset95shuffle1/train/snapshot-200000
+init_weights: /home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-2/social-testAug4-trainset95shuffle1/train/snapshot-210000
 intermediate_supervision: false
 intermediate_supervision_layer: 12
 location_refinement: true
@@ -107,7 +107,7 @@ partaffinityfield_graph:
 partaffinityfield_predict: true
 pos_dist_thresh: 17
 pre_resize: []
-project_path: /content/drive/MyDrive/Work/DeepLabCut/social-test-daniel-2023-08-04
+project_path: /home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04
 rotation: 25
 rotratio: 0.4
 save_iters: 10000
