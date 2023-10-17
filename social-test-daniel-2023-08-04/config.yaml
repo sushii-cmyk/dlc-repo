@@ -65,7 +65,7 @@ colormap: rainbow
     # Training,Evaluation and Analysis configuration
 TrainingFraction:
 - 0.95
-iteration: 3
+iteration: 2
 default_net_type: dlcrnet_ms5
 default_augmenter: multi-animal-imgaug
 default_track_method: ellipse
