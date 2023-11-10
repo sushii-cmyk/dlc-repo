@@ -1,0 +1,6 @@
+model_checkpoint_path: "/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-4/social-testAug4-trainset95shuffle1/train/snapshot-170000"
+all_model_checkpoint_paths: "/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-4/social-testAug4-trainset95shuffle1/train/snapshot-130000"
+all_model_checkpoint_paths: "/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-4/social-testAug4-trainset95shuffle1/train/snapshot-140000"
+all_model_checkpoint_paths: "/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-4/social-testAug4-trainset95shuffle1/train/snapshot-150000"
+all_model_checkpoint_paths: "/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-4/social-testAug4-trainset95shuffle1/train/snapshot-160000"
+all_model_checkpoint_paths: "/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-4/social-testAug4-trainset95shuffle1/train/snapshot-170000"

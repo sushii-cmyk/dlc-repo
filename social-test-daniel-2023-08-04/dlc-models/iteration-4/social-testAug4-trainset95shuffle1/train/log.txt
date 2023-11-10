@@ -1,0 +1,538 @@
+2023-11-07 16:36:16 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5]],
+ 'all_joints_names': ['nose',
+                      'leftear',
+                      'rightear',
+                      'midsection1',
+                      'midsection2',
+                      'tailbase'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 8,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-4/UnaugmentedDataSet_social-testAug4/social-test_daniel95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 500,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/home/dawilkerson/.conda/envs/DEEPLABCUT/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-4/UnaugmentedDataSet_social-testAug4/Documentation_data-social-test_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]],
+ 'net_type': 'resnet_50',
+ 'num_idchannel': 0,
+ 'num_joints': 6,
+ 'num_limbs': 15,
+ 'optimizer': 'adam',
+ 'pafwidth': 20,
+ 'pairwise_huber_loss': False,
+ 'pairwise_loss_weight': 0.1,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1],
+                             [0, 2],
+                             [0, 3],
+                             [0, 4],
+                             [0, 5],
+                             [1, 2],
+                             [1, 3],
+                             [1, 4],
+                             [1, 5],
+                             [2, 3],
+                             [2, 4],
+                             [2, 5],
+                             [3, 4],
+                             [3, 5],
+                             [4, 5]],
+ 'partaffinityfield_predict': True,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': '/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 10000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-4/social-testAug4-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-11-10 04:11:39 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5]],
+ 'all_joints_names': ['nose',
+                      'leftear',
+                      'rightear',
+                      'midsection1',
+                      'midsection2',
+                      'tailbase'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 8,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-4/UnaugmentedDataSet_social-testAug4/social-test_daniel95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 500,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/home/dawilkerson/.conda/envs/DEEPLABCUT/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-4/UnaugmentedDataSet_social-testAug4/Documentation_data-social-test_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]],
+ 'net_type': 'resnet_50',
+ 'num_idchannel': 0,
+ 'num_joints': 6,
+ 'num_limbs': 15,
+ 'optimizer': 'adam',
+ 'pafwidth': 20,
+ 'pairwise_huber_loss': False,
+ 'pairwise_loss_weight': 0.1,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1],
+                             [0, 2],
+                             [0, 3],
+                             [0, 4],
+                             [0, 5],
+                             [1, 2],
+                             [1, 3],
+                             [1, 4],
+                             [1, 5],
+                             [2, 3],
+                             [2, 4],
+                             [2, 5],
+                             [3, 4],
+                             [3, 5],
+                             [4, 5]],
+ 'partaffinityfield_predict': True,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': '/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 10000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04/dlc-models/iteration-4/social-testAug4-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-11-10 04:13:41 iteration: 500 loss: 0.0247 scmap loss: 0.0206 locref loss: 0.0009 limb loss: 0.0032 lr: 0.0001
+2023-11-10 04:15:36 iteration: 1000 loss: 0.0096 scmap loss: 0.0087 locref loss: 0.0002 limb loss: 0.0007 lr: 0.0001
+2023-11-10 04:17:29 iteration: 1500 loss: 0.0070 scmap loss: 0.0063 locref loss: 0.0002 limb loss: 0.0005 lr: 0.0001
+2023-11-10 04:19:22 iteration: 2000 loss: 0.0057 scmap loss: 0.0051 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+2023-11-10 04:21:10 iteration: 2500 loss: 0.0051 scmap loss: 0.0046 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+2023-11-10 04:22:50 iteration: 3000 loss: 0.0048 scmap loss: 0.0043 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
+2023-11-10 04:24:29 iteration: 3500 loss: 0.0045 scmap loss: 0.0041 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
+2023-11-10 04:26:09 iteration: 4000 loss: 0.0044 scmap loss: 0.0040 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
+2023-11-10 04:27:48 iteration: 4500 loss: 0.0040 scmap loss: 0.0037 locref loss: 0.0001 limb loss: 0.0002 lr: 0.0001
+2023-11-10 04:29:28 iteration: 5000 loss: 0.0041 scmap loss: 0.0038 locref loss: 0.0001 limb loss: 0.0002 lr: 0.0001
+2023-11-10 04:31:07 iteration: 5500 loss: 0.0039 scmap loss: 0.0036 locref loss: 0.0001 limb loss: 0.0002 lr: 0.0001
+2023-11-10 04:32:46 iteration: 6000 loss: 0.0036 scmap loss: 0.0033 locref loss: 0.0001 limb loss: 0.0002 lr: 0.0001
+2023-11-10 04:34:25 iteration: 6500 loss: 0.0036 scmap loss: 0.0033 locref loss: 0.0001 limb loss: 0.0002 lr: 0.0001
+2023-11-10 04:36:05 iteration: 7000 loss: 0.0037 scmap loss: 0.0034 locref loss: 0.0001 limb loss: 0.0002 lr: 0.0001
+2023-11-10 04:37:48 iteration: 7500 loss: 0.0036 scmap loss: 0.0034 locref loss: 0.0001 limb loss: 0.0002 lr: 0.0001
+2023-11-10 04:39:40 iteration: 8000 loss: 0.0031 scmap loss: 0.0029 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2023-11-10 04:41:33 iteration: 8500 loss: 0.0031 scmap loss: 0.0029 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
+2023-11-10 04:43:22 iteration: 9000 loss: 0.0031 scmap loss: 0.0029 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2023-11-10 04:45:02 iteration: 9500 loss: 0.0030 scmap loss: 0.0028 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2023-11-10 04:46:42 iteration: 10000 loss: 0.0031 scmap loss: 0.0029 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2023-11-10 04:48:23 iteration: 10500 loss: 0.0030 scmap loss: 0.0028 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2023-11-10 04:50:03 iteration: 11000 loss: 0.0030 scmap loss: 0.0028 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2023-11-10 04:51:45 iteration: 11500 loss: 0.0030 scmap loss: 0.0028 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2023-11-10 04:53:39 iteration: 12000 loss: 0.0029 scmap loss: 0.0027 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2023-11-10 04:55:34 iteration: 12500 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0001 limb loss: 0.0001 lr: 1e-05
+2023-11-10 04:57:26 iteration: 13000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 04:59:19 iteration: 13500 loss: 0.0026 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:01:11 iteration: 14000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:03:02 iteration: 14500 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:04:55 iteration: 15000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:06:48 iteration: 15500 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:08:40 iteration: 16000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:10:35 iteration: 16500 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:12:27 iteration: 17000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:14:21 iteration: 17500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:16:17 iteration: 18000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:18:11 iteration: 18500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:20:06 iteration: 19000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:22:01 iteration: 19500 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:23:57 iteration: 20000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:25:50 iteration: 20500 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:27:45 iteration: 21000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:29:39 iteration: 21500 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:31:35 iteration: 22000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:33:30 iteration: 22500 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:35:25 iteration: 23000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:37:17 iteration: 23500 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:39:12 iteration: 24000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:41:04 iteration: 24500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:42:57 iteration: 25000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:44:50 iteration: 25500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:46:43 iteration: 26000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:48:37 iteration: 26500 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:50:31 iteration: 27000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:52:25 iteration: 27500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:54:20 iteration: 28000 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:56:12 iteration: 28500 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:58:05 iteration: 29000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 05:59:58 iteration: 29500 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:01:52 iteration: 30000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:03:44 iteration: 30500 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:05:37 iteration: 31000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:07:30 iteration: 31500 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:09:23 iteration: 32000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:11:16 iteration: 32500 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:13:08 iteration: 33000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:15:01 iteration: 33500 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:16:55 iteration: 34000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:18:48 iteration: 34500 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:20:41 iteration: 35000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:22:35 iteration: 35500 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:24:27 iteration: 36000 loss: 0.0022 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:26:21 iteration: 36500 loss: 0.0022 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:28:14 iteration: 37000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:30:06 iteration: 37500 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:31:59 iteration: 38000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:33:52 iteration: 38500 loss: 0.0022 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:35:46 iteration: 39000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:37:38 iteration: 39500 loss: 0.0021 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:39:32 iteration: 40000 loss: 0.0021 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:41:25 iteration: 40500 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:43:19 iteration: 41000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:45:11 iteration: 41500 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:47:00 iteration: 42000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:48:40 iteration: 42500 loss: 0.0020 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:50:20 iteration: 43000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:52:01 iteration: 43500 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:53:41 iteration: 44000 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:55:27 iteration: 44500 loss: 0.0018 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:57:19 iteration: 45000 loss: 0.0018 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 06:59:09 iteration: 45500 loss: 0.0018 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:01:02 iteration: 46000 loss: 0.0018 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:02:54 iteration: 46500 loss: 0.0017 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:04:46 iteration: 47000 loss: 0.0017 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:06:40 iteration: 47500 loss: 0.0017 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:08:31 iteration: 48000 loss: 0.0018 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:10:24 iteration: 48500 loss: 0.0017 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:12:18 iteration: 49000 loss: 0.0017 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:14:09 iteration: 49500 loss: 0.0017 scmap loss: 0.0016 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:16:03 iteration: 50000 loss: 0.0017 scmap loss: 0.0015 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:17:57 iteration: 50500 loss: 0.0017 scmap loss: 0.0015 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:19:49 iteration: 51000 loss: 0.0017 scmap loss: 0.0015 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:21:29 iteration: 51500 loss: 0.0016 scmap loss: 0.0015 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:23:16 iteration: 52000 loss: 0.0016 scmap loss: 0.0015 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:25:07 iteration: 52500 loss: 0.0016 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:27:01 iteration: 53000 loss: 0.0016 scmap loss: 0.0015 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:28:55 iteration: 53500 loss: 0.0016 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:30:49 iteration: 54000 loss: 0.0016 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:32:44 iteration: 54500 loss: 0.0016 scmap loss: 0.0015 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:34:38 iteration: 55000 loss: 0.0016 scmap loss: 0.0015 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:36:32 iteration: 55500 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:38:28 iteration: 56000 loss: 0.0016 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:40:21 iteration: 56500 loss: 0.0016 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:42:13 iteration: 57000 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:44:07 iteration: 57500 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:45:58 iteration: 58000 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:47:49 iteration: 58500 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:49:40 iteration: 59000 loss: 0.0016 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:51:33 iteration: 59500 loss: 0.0016 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:53:25 iteration: 60000 loss: 0.0015 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:55:15 iteration: 60500 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:56:55 iteration: 61000 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 07:58:36 iteration: 61500 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:00:16 iteration: 62000 loss: 0.0015 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:02:08 iteration: 62500 loss: 0.0015 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:03:53 iteration: 63000 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:05:34 iteration: 63500 loss: 0.0015 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:07:14 iteration: 64000 loss: 0.0015 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:08:57 iteration: 64500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:10:39 iteration: 65000 loss: 0.0015 scmap loss: 0.0014 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:12:21 iteration: 65500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:14:02 iteration: 66000 loss: 0.0015 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:15:43 iteration: 66500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:17:26 iteration: 67000 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:19:08 iteration: 67500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:20:50 iteration: 68000 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:22:31 iteration: 68500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:24:13 iteration: 69000 loss: 0.0014 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:25:54 iteration: 69500 loss: 0.0014 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:27:37 iteration: 70000 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:29:20 iteration: 70500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:31:02 iteration: 71000 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:32:44 iteration: 71500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:34:29 iteration: 72000 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:36:20 iteration: 72500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:38:04 iteration: 73000 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:39:45 iteration: 73500 loss: 0.0014 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:41:24 iteration: 74000 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:43:04 iteration: 74500 loss: 0.0014 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:44:44 iteration: 75000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:46:23 iteration: 75500 loss: 0.0014 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:48:05 iteration: 76000 loss: 0.0014 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:49:44 iteration: 76500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:51:23 iteration: 77000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:53:02 iteration: 77500 loss: 0.0014 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:54:42 iteration: 78000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:56:21 iteration: 78500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:58:00 iteration: 79000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 08:59:40 iteration: 79500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:01:18 iteration: 80000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:02:58 iteration: 80500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:04:37 iteration: 81000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:06:16 iteration: 81500 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:07:57 iteration: 82000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:09:36 iteration: 82500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:11:15 iteration: 83000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:12:55 iteration: 83500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:14:34 iteration: 84000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:16:16 iteration: 84500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:17:56 iteration: 85000 loss: 0.0014 scmap loss: 0.0013 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:19:35 iteration: 85500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:21:16 iteration: 86000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:22:55 iteration: 86500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:24:35 iteration: 87000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:26:14 iteration: 87500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:27:54 iteration: 88000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:29:33 iteration: 88500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:31:12 iteration: 89000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:32:52 iteration: 89500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:34:32 iteration: 90000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:36:12 iteration: 90500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:37:51 iteration: 91000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:39:32 iteration: 91500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:41:12 iteration: 92000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:42:51 iteration: 92500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:44:34 iteration: 93000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:46:17 iteration: 93500 loss: 0.0013 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:47:56 iteration: 94000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:49:39 iteration: 94500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:51:20 iteration: 95000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:53:00 iteration: 95500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:54:42 iteration: 96000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:56:22 iteration: 96500 loss: 0.0013 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:58:02 iteration: 97000 loss: 0.0013 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 09:59:43 iteration: 97500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:01:28 iteration: 98000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:03:16 iteration: 98500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:04:56 iteration: 99000 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:06:37 iteration: 99500 loss: 0.0013 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:08:17 iteration: 100000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:09:57 iteration: 100500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:11:37 iteration: 101000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:13:17 iteration: 101500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:14:56 iteration: 102000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:16:37 iteration: 102500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:18:21 iteration: 103000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:20:10 iteration: 103500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:21:49 iteration: 104000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:23:30 iteration: 104500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:25:11 iteration: 105000 loss: 0.0013 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:26:51 iteration: 105500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:28:32 iteration: 106000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:30:12 iteration: 106500 loss: 0.0013 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:31:51 iteration: 107000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:33:30 iteration: 107500 loss: 0.0013 scmap loss: 0.0012 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:35:10 iteration: 108000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:36:50 iteration: 108500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:38:30 iteration: 109000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:40:10 iteration: 109500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:41:49 iteration: 110000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:43:29 iteration: 110500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:45:08 iteration: 111000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:46:49 iteration: 111500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:48:28 iteration: 112000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:50:07 iteration: 112500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:51:47 iteration: 113000 loss: 0.0012 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:53:29 iteration: 113500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:55:08 iteration: 114000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:56:49 iteration: 114500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 10:58:29 iteration: 115000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:00:08 iteration: 115500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:01:47 iteration: 116000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:03:27 iteration: 116500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:05:09 iteration: 117000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:06:49 iteration: 117500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:08:28 iteration: 118000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:10:08 iteration: 118500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:11:48 iteration: 119000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:13:27 iteration: 119500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:15:06 iteration: 120000 loss: 0.0012 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:16:46 iteration: 120500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:18:25 iteration: 121000 loss: 0.0012 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:20:05 iteration: 121500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:21:44 iteration: 122000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:23:24 iteration: 122500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:25:04 iteration: 123000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:26:44 iteration: 123500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:28:24 iteration: 124000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:30:04 iteration: 124500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:31:43 iteration: 125000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:33:23 iteration: 125500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:35:03 iteration: 126000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:36:42 iteration: 126500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:38:22 iteration: 127000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:40:01 iteration: 127500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:41:44 iteration: 128000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:43:24 iteration: 128500 loss: 0.0012 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:45:04 iteration: 129000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:46:44 iteration: 129500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:48:24 iteration: 130000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:50:04 iteration: 130500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:51:43 iteration: 131000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:53:24 iteration: 131500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:55:04 iteration: 132000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:56:43 iteration: 132500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 11:58:23 iteration: 133000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:00:02 iteration: 133500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:01:42 iteration: 134000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:03:21 iteration: 134500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:05:01 iteration: 135000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:06:40 iteration: 135500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:08:20 iteration: 136000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:10:00 iteration: 136500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:11:39 iteration: 137000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:13:18 iteration: 137500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:14:57 iteration: 138000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:16:37 iteration: 138500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:18:16 iteration: 139000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:19:55 iteration: 139500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:21:35 iteration: 140000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:23:14 iteration: 140500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:24:53 iteration: 141000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:26:33 iteration: 141500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:28:12 iteration: 142000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:29:51 iteration: 142500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:31:30 iteration: 143000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:33:09 iteration: 143500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:34:48 iteration: 144000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:36:27 iteration: 144500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:38:06 iteration: 145000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:39:46 iteration: 145500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:41:25 iteration: 146000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:43:04 iteration: 146500 loss: 0.0012 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:44:44 iteration: 147000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:46:23 iteration: 147500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:48:02 iteration: 148000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:49:41 iteration: 148500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:51:21 iteration: 149000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:53:00 iteration: 149500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:54:39 iteration: 150000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:56:19 iteration: 150500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:57:58 iteration: 151000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 12:59:38 iteration: 151500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:01:17 iteration: 152000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:02:56 iteration: 152500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:04:35 iteration: 153000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:06:14 iteration: 153500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:07:53 iteration: 154000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:09:32 iteration: 154500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:11:12 iteration: 155000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:12:52 iteration: 155500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:14:31 iteration: 156000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:16:10 iteration: 156500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:17:49 iteration: 157000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:19:30 iteration: 157500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:21:10 iteration: 158000 loss: 0.0012 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:22:50 iteration: 158500 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:24:29 iteration: 159000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:26:09 iteration: 159500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:27:48 iteration: 160000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:29:28 iteration: 160500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:31:07 iteration: 161000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:32:46 iteration: 161500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:34:26 iteration: 162000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:36:05 iteration: 162500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:37:45 iteration: 163000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:39:24 iteration: 163500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:41:03 iteration: 164000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:42:42 iteration: 164500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:44:22 iteration: 165000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:46:01 iteration: 165500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:47:41 iteration: 166000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:49:20 iteration: 166500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:51:00 iteration: 167000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:52:39 iteration: 167500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:54:21 iteration: 168000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:56:01 iteration: 168500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:57:40 iteration: 169000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 13:59:20 iteration: 169500 loss: 0.0011 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:00:59 iteration: 170000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:02:39 iteration: 170500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:04:18 iteration: 171000 loss: 0.0012 scmap loss: 0.0011 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:05:58 iteration: 171500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:07:37 iteration: 172000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:09:16 iteration: 172500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:10:56 iteration: 173000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:12:35 iteration: 173500 loss: 0.0010 scmap loss: 0.0009 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:14:14 iteration: 174000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:15:53 iteration: 174500 loss: 0.0010 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:17:32 iteration: 175000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:19:11 iteration: 175500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:20:51 iteration: 176000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:22:30 iteration: 176500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:24:09 iteration: 177000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:25:48 iteration: 177500 loss: 0.0010 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:27:28 iteration: 178000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:29:10 iteration: 178500 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2023-11-10 14:30:49 iteration: 179000 loss: 0.0011 scmap loss: 0.0010 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
