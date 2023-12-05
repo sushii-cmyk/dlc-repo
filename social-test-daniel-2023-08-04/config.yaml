@@ -6,7 +6,7 @@ multianimalproject: true
 identity: false
 
     # Project path (change when moving around)
-project_path: /space/dawilkerson/Desktop/idas-dlc/social-test-daniel-2023-08-04
+project_path: /home/dawilkerson/idas-dlc/social-test-daniel-2023-08-04
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
@@ -65,7 +65,7 @@ colormap: rainbow
     # Training,Evaluation and Analysis configuration
 TrainingFraction:
 - 0.95
-iteration: 4
+iteration: 7
 default_net_type: dlcrnet_ms5
 default_augmenter: multi-animal-imgaug
 default_track_method: ellipse
