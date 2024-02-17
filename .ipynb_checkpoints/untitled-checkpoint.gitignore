@@ -1,0 +1,5 @@
+# Ignore files/folders starting with a dot
+.*
+
+# Ignore config.yaml
+config.yaml
