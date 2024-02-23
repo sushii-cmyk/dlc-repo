@@ -6,7 +6,7 @@ multianimalproject: true
 identity: false
 
     # Project path (change when moving around)
-project_path: C:/Users/danie/Work/dlc-repo/social-test-daniel-2023-08-04
+project_path: /home/dawilkerson/dlc-repo/social-test-daniel-2023-08-04
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
